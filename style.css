@@ -1,10 +1,21 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .title {
@@ -28,6 +39,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 45px;
+  z-index: auto;
+  /* авто не задает новый контекст наложения */
+  position: relative;
 }
 
 .product_card {
@@ -55,7 +69,6 @@ body {
 }
 
 .product_card_title {
-  font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 27px;
   margin: 0 0 5px 0;
@@ -96,6 +109,9 @@ body {
   line-height: 24px;
 }
 
-.product_card-price b {
-  font-family: Arial, sans-serif;
+.backgraund_dandelions {
+  position: absolute;
+  left: 0;
+  top: -408px;
+  z-index: -10;
 }
