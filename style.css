@@ -122,3 +122,16 @@ body {
 .products__item {
   width: 340px;
 }
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.btn-blue {
+  background-color: #3498db;
+}
+
+.btn-green {
+  background-color: #2ecc71;
+}
